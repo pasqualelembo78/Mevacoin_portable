@@ -24,8 +24,8 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  = (uint64_t)(-1);
-const unsigned EMISSION_SPEED_FACTOR                         = 33;
+const uint64_t MONEY_SUPPLY                                  = 8000000000000000000;
+const unsigned EMISSION_SPEED_FACTOR                         = 21;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
@@ -33,7 +33,7 @@ const size_t   MEVACOIN_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   MEVACOIN_BLOCK_GRANTED_FULL_REWARD_ZONE     = 10000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   MEVACOIN_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
-const size_t   MEVACOIN_DISPLAY_DECIMAL_POINT              = 8;
+const size_t   MEVACOIN_DISPLAY_DECIMAL_POINT              = 11;
 //TODO Define minimum fee for transactions
 const uint64_t MINIMUM_FEE                                   = 10000;
 const uint64_t DEFAULT_DUST_THRESHOLD                        = 100;
@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     MEVACOIN_NAME[]                             = "Mevacoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffff07029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210180a004a1b2c0c4439c65cce62b82eb980a4d094daa7dd10535ada3f8c5c02c1b";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffff01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210159c2ead1e3cd1e1dc66ecb75f21ccafc635210108b6b660f89d5d7b014115a53";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
