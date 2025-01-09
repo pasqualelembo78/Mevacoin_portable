@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     MEVACOIN_NAME[]                             = "Mevacoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffff0f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101e8fa53378b2e748fdbec5ebf92be721941deb77daa0d3e94ef13369b24670767";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001d9d3b3ed826f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210181f61336318a9a11d1f91df1f97a88547e46fe71e74aadcd3bf63445a681405e";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
