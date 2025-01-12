@@ -1,0 +1,85 @@
+{
+  "logging": {
+    "level": "info",
+    "enableConsoleLog": true,
+    "enableConsoleColors": true,
+    "perPoolLogFile": true
+  },
+  "banning": {
+    "enabled": true,
+    "time": 600,
+    "invalidPercent": 50,
+    "checkThreshold": 50
+  },
+  "notifications": {
+    "enabled": false
+  },
+  "persistence": {
+    "postgres": {
+      "host": "127.0.0.1",
+      "port": 5432,
+      "user": "miningcore",
+      "password": "password",
+      "database": "miningcore", 
+"enableLegacyTimestamps": true
+    }
+  },
+  "paymentProcessing": {
+    "enabled": true,
+    "interval": 600,
+    "shareRecoveryFile": "recovered-shares.txt"
+  },
+  "pools": [
+    {
+      "id": "mvc1",
+      "enabled": true,
+      "coin": "mevacoin",
+      "address": "bickazsEYHf6RJ8NCzNz8RWcXiLnEt4e5Dj2RiPiouvWikLm4SzR9dWitNgLnQJt1A9uRoqKB1rhpeXS6zq5FYbq9meq4eVUvT",
+      "rewardRecipients": [
+        {
+          "address": "bickazsEYHf6RJ8NCzNz8RWcXiLnEt4e5Dj2RiPiouvWikLm4SzR9dWitNgLnQJt1A9uRoqKB1rhpeXS6zq5FYbq9meq4eVUvT",
+          "percentage": 99
+        },
+        {
+          "address": "bickazsEYHf6RJ8NCzNz8RWcXiLnEt4e5Dj2RiPiouvWikLm4SzR9dWitNgLnQJt1A9uRoqKB1rhpeXS6zq5FYbq9meq4eVUvT",
+          "percentage": 1
+        }
+      ],
+      "blockRefreshInterval": 500,
+      "clientConnectionTimeout": 600,
+      "ports": {
+        "3032": {
+          "listenAddress": "0.0.0.0",
+          "difficulty": 7500,
+          "name": "CPU Mining",
+          "varDiff": {
+            "minDiff": 1000,
+            "maxDiff": 50000,
+            "targetTime": 15,
+            "retargetTime": 90,
+            "variancePercent": 30
+          }
+        }
+      },
+      "daemons": [
+        {
+          "host": "127.0.0.1",
+          "port": 18081
+        },
+        {
+          "host": "127.0.0.1",
+          "port": 18082,
+          "category": "wallet"
+        }
+      ],
+      "paymentProcessing": {
+        "enabled": true,
+        "minimumPayment": 1.0,
+        "payoutScheme": "PPLNS",
+        "payoutSchemeConfig": {
+          "factor": 2.0
+        }
+      }
+    }
+  ]
+}
