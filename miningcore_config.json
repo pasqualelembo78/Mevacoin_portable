@@ -34,14 +34,14 @@
       "id": "mvc1",
       "enabled": true,
       "coin": "mevacoin",
-      "address": "bickazsEYHf6RJ8NCzNz8RWcXiLnEt4e5Dj2RiPiouvWikLm4SzR9dWitNgLnQJt1A9uRoqKB1rhpeXS6zq5FYbq9meq4eVUvT",
+      "address": "bickukNRpQiDvtEQHxS8uKF9BHxKjCVrMBXtC6TdNYd5NT8TKtD9jfDEvZmVN4ZiegeAS3FirZKbRNKmd11z3G9o75YeevACGE",
       "rewardRecipients": [
         {
-          "address": "bickazsEYHf6RJ8NCzNz8RWcXiLnEt4e5Dj2RiPiouvWikLm4SzR9dWitNgLnQJt1A9uRoqKB1rhpeXS6zq5FYbq9meq4eVUvT",
+          "address": "bickukNRpQiDvtEQHxS8uKF9BHxKjCVrMBXtC6TdNYd5NT8TKtD9jfDEvZmVN4ZiegeAS3FirZKbRNKmd11z3G9o75YeevACGE",
           "percentage": 99
         },
         {
-          "address": "bickazsEYHf6RJ8NCzNz8RWcXiLnEt4e5Dj2RiPiouvWikLm4SzR9dWitNgLnQJt1A9uRoqKB1rhpeXS6zq5FYbq9meq4eVUvT",
+          "address": "bickukNRpQiDvtEQHxS8uKF9BHxKjCVrMBXtC6TdNYd5NT8TKtD9jfDEvZmVN4ZiegeAS3FirZKbRNKmd11z3G9o75YeevACGE",
           "percentage": 1
         }
       ],
