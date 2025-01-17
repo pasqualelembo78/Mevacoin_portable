@@ -31,7 +31,7 @@
         "enabled": true,
 	"mergedMining": false,
         "clusterForks": "auto",
-        "poolAddress": "bickukNRpQiDvtEQHxS8uKF9BHxKjCVrMBXtC6TdNYd5NT8TKtD9jfDEvZmVN4ZiegeAS3FirZKbRNKmd11z3G9o75YeevACGE",
+        "poolAddress": " bicktHtkW4ASubtkXi3QQCRFApZwEuchaKpJdmBHYehu2LSywGKgChG7r3Z2i3n16KUuJ5rXKtf3aWrn26ogWqzw4ym4zuqkRC",
         "intAddressPrefix": null,
         "blockRefreshInterval": 600,
         "minerTimeout": 600,
