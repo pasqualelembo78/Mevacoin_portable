@@ -147,7 +147,9 @@ echo "Configurazione del firewall con UFW..."
 sudo ufw enable
 sudo ufw allow 18080/tcp
 sudo ufw allow 18081/tcp
-sudo ufw allow ssh
+sudo ufw allow 4000/tcp
+sudo ufw allow 22/tcp
+
 
 
 echo "Verifica del firewall..."
