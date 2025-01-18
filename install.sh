@@ -3,6 +3,14 @@
 # Abilita modalità di uscita immediata in caso di errore
 set -e
 
+# Configura il firewall
+echo "Configurazione del firewall con UFW..."
+
+sudo ufw enable
+sudo ufw allow 18080/tcp
+sudo ufw allow 18081/tcp
+sudo ufw allow 4000/tcp
+sudo ufw allow 22/tcp
 # Definisci la cartella delle dipendenze
 DEPENDENCIES_DIR="/opt/dipendenze_mevacoin"
 
@@ -141,14 +149,6 @@ sudo chmod -R 775 "${LOG_DIR}"
 
 sudo chmod +x "${MEVACOIND_BIN}"
 
-# Configura il firewall
-echo "Configurazione del firewall con UFW..."
-
-sudo ufw enable
-sudo ufw allow 18080/tcp
-sudo ufw allow 18081/tcp
-sudo ufw allow 4000/tcp
-sudo ufw allow 22/tcp
 
 
 
