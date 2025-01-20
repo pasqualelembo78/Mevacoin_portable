@@ -7,12 +7,12 @@ apt-get install -y zip unzip wget ufw
 
 # 2. Configurazione del firewall
 echo "Configurazione del firewall (UFW)..."
+
+sudo ufw enable
 sudo ufw allow 18080/tcp
 sudo ufw allow 18081/tcp
-sudo ufw allow OpenSSH
-sudo ufw enable -y
-sudo ufw reload
-
+sudo ufw allow 4000/tcp
+sudo ufw allow 22/tcp
 # 3. Creazione delle directory di destinazione
 mkdir -p /opt/dipendenze_mevacoin
 mkdir -p /opt/mevacoin/build/src
