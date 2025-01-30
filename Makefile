@@ -12,6 +12,10 @@ test-debug: build-debug
 
 all-debug: build-debug
 
+release-static-win64:
+	mkdir -p build/release
+	cd build/release && cmake -G "MSYS Makefiles" -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D CMAKE_BUILD_TYPE=Release -D BUILD_TAG="win-x64" -D CMAKE_TOOLCHAIN_FILE=../../cmake/64-bit-toolchain.cmake -D MSYS2_FOLDER=c:/msys64 ../.. && $(MAKE)
+
 cmake-release:
 	mkdir -p build/release
 	cd build/release && cmake -D CMAKE_BUILD_TYPE=Release ../..
