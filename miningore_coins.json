@@ -1,0 +1,12 @@
+{
+    "mevacoin": {
+        "name": "mevacoin",
+        "canonicalName": "mevacoin",
+        "symbol": "mvc1",
+        "family": "cryptonote",
+        "hash": "cr",
+        "hashVariant": 0,
+        "smallestUnit": 100000000000,
+        "addressPrefix": 18511
+    }
+}
