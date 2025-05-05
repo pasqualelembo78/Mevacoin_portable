@@ -24,27 +24,16 @@ sudo ufw --force enable
 
 echo "Firewall configurato."
 
-echo "Preparazione Mevacoin..."
-if [ -d "/opt/mevacoin" ]; then
-    if [ -d "/opt/mevacoin/.git" ]; then
-        echo "Aggiorno repository Mevacoin..."
-        cd /opt/mevacoin
-        git reset --hard
-        git pull origin main
-    else
-        echo "Rimuovo cartella non-Git e riclono..."
-        sudo rm -rf /opt/mevacoin
-        git clone https://github.com/pasqualelembo78/Mevacoin_portable.git /opt/mevacoin
-    fi
-else
-    echo "Clono Mevacoin..."
-    git clone https://github.com/pasqualelembo78/Mevacoin_portable.git /opt/mevacoin
-fi
+echo "Clonazione di Mevacoin in /opt/mevacoin..."
 
-echo "Compilazione Mevacoin..."
-cd /opt/mevacoin
-mkdir -p build && cd build
-cmake ..
+# Rimuove qualsiasi cartella esistente
+sudo rm -rf /opt/mevacoin
+
+# Clona il repository
+git clone https://github.com/pasqualelembo78/Mevacoin_portable.git /opt/mevacoin
+
+# Compilazione
+cd /opt/mevacoin || exit 1
 make -j$(nproc)
 
 echo "Configurazione del servizio mevacoind..."
