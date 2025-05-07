@@ -34,6 +34,9 @@ git clone https://github.com/pasqualelembo78/Mevacoin_portable.git /opt/mevacoin
 
 # Compilazione
 cd /opt/mevacoin || exit 1
+mkdir build
+cd build
+cmake ..
 make -j$(nproc)
 
 echo "Configurazione del servizio mevacoind..."
