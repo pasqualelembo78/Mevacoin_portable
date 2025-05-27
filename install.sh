@@ -7,10 +7,14 @@ set -e
 echo "Configurazione del firewall con UFW..."
 
 sudo ufw enable
-sudo ufw allow 18080/tcp
-sudo ufw allow 18081/tcp
+sudo ufw allow 17080/tcp
+sudo ufw allow 17081/tcp
+sudo ufw allow 17082/tcp
+sudo ufw allow 3333/tcp
 sudo ufw allow 4000/tcp
 sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
 # Definisci la cartella delle dipendenze
 DEPENDENCIES_DIR="/opt/dipendenze_mevacoin"
 
